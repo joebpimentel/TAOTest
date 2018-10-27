@@ -1,0 +1,28 @@
+/* -*- C++ -*- */
+#if !defined (_CALC_IDL)
+#define _CALC_IDL
+
+module br
+{
+    module org
+    {
+        module joe
+        {
+            interface Calc
+            {
+              // = TITLE
+              // Defines an interface that encapsulates operations that return the
+              // mesg string to be displayed and shuts down the server.
+
+              double doCalc(in double value);
+              // This operation returns the message as a sequence of Objects and
+              // displays it on the screen as a string.
+
+              oneway void shutdown ();
+              // This operation will shutdown the server.
+            };
+
+        };
+    };
+};
+#endif /* _CALC_IDL */

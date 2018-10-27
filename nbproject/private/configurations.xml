@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="calc/src/main/calcclient" name="0">
+      <in>calcclient.cpp</in>
+    </df>
+    <df root="calc/src/main/calcserver" name="1">
+    </df>
+    <df root="calc/src/main/cpp" name="2">
+      <in>CalcC.h</in>
+      <in>CalcC.inl</in>
+      <in>CalcImpl.cpp</in>
+      <in>CalcImpl.h</in>
+      <in>CalcLib.h</in>
+      <in>CalcS.cpp</in>
+      <in>CalcS.h</in>
+    </df>
+    <df root="calc/src/main" name="3">
+      <df name="calcclient">
+      </df>
+      <df name="calclib">
+        <in>calclibexec.cpp</in>
+      </df>
+      <df name="calcserver">
+        <in>CalcImpl.cpp</in>
+        <in>calcserver.cpp</in>
+      </df>
+      <df name="cpp">
+        <in>CalcC.cpp</in>
+        <in>CalcLib.cpp</in>
+      </df>
+      <df name="idl">
+      </df>
+      <df name="java">
+        <df name="br">
+          <df name="org">
+            <df name="joe">
+            </df>
+          </df>
+        </df>
+      </df>
+    </df>
+    <itemPath>calc/build/main/calcclient/calcclient</itemPath>
+  </logicalFolder>
+  <projectmakefile>calc/build/Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>2</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+            <option name="reverse_debugging" value="on"/>
+            <option name="gdb_source_dirs"
+                    value="calc/src/main/calcclient:calc/src/main/cpp"/>
+            <option name="debug_command"
+                    value="gdb /home/joebp/workspace/corba/TAO/calc/build/main/calcclient/calcclient"/>
+            <option name="debug_dir"
+                    value="/home/joebp/workspace/corba/TAO/calc/build/main/calcclient"/>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir>calc/src/main/calcclient</rundir>
+        <buildfirst>false</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+  </confs>
+</configurationDescriptor>
