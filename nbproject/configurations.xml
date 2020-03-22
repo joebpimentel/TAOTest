@@ -2071,7 +2071,6 @@
         <in>calclibexec.cpp</in>
       </df>
       <df name="calcserver">
-        <in>CalcImpl.cpp</in>
         <in>calcserver.cpp</in>
       </df>
       <df name="cpp">
@@ -2138,13 +2137,6 @@
             ex="false"
             tool="1"
             flavor2="0">
-      </item>
-      <item path="calc/src/main/calcserver/CalcImpl.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-        <ccTool flags="1">
-        </ccTool>
       </item>
       <item path="calc/src/main/calcserver/calcserver.cpp"
             ex="false"
