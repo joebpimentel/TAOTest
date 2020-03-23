@@ -7,7 +7,7 @@ set(TAO_ROOT $ENV{TAO_ROOT})
 set(Boost_USE_STATIC_LIBS OFF) 
 set(Boost_USE_MULTITHREADED ON)  
 set(Boost_USE_STATIC_RUNTIME OFF) 
-find_package(Boost 1.62.0 COMPONENTS date_time) 
+find_package(Boost 1.65.1 COMPONENTS date_time) 
 
 include_directories(${ACE_ROOT} ${TAO_ROOT} ${TAO_ROOT}/orbsvcs ${Boost_INCLUDE_DIRS})
 FIND_PROGRAM( CORBAIDL tao_idl )
